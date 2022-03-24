@@ -1,0 +1,34 @@
+{
+  "name": "fastify-unleash-client-failure",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example to demonstrate that server crashes when using fastify and the server is unavailable",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js | pino-pretty",
+    "start:unleash-events-error": "UNLEASH_EVENTS_ERROR=1 node index.js | pino-pretty",
+    "start:process-uncaught-exception": "PROCESS_UNCAUGHT_EXCEPTION=1 node index.js | pino-pretty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristobal/fastify-unleash-client-failure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristobal/fastify-unleash-client-failure/issues"
+  },
+  "homepage": "https://github.com/cristobal/fastify-unleash-client-failure#readme",
+  "dependencies": {
+    "fastify": "3.27.4",
+    "unleash-client": "3.13.0"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "devDependencies": {
+    "pino-pretty": "7.5.4"
+  }
+}
